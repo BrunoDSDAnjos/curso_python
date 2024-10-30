@@ -1,7 +1,11 @@
-entrada = input('[E]ntrada [S]air: ')
-senha_digitada = int(input('Senha: '))
-senha_permitida = 88724533
-if entrada == 'E' or 'e' and senha_digitada == senha_permitida:
-    print('Bem vindo')
+nome = input('Seu nome: ')
+idade = input("Sua idade: ")
+if nome and idade:
+    print(f'Seu nome é {nome}')
+    print(f'Seu nome invertido {nome[::-1]}')
+    print(f"Seu nome tem {len(nome)} letras")
+    print(f"A ultima letra do seu nome é {nome[4::]}")
 else:
-    print('Senha invalida')
+    print('Faltou preencher algum campo!')
+
+    
